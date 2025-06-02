@@ -1,24 +1,27 @@
+import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
-import 'package:object_detection_app/MySplashPage.dart';
+import 'package:get/get.dart';
 
-void main() {
+import 'home.dart';
+
+List<CameraDescription>? cameras;
+
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  cameras = await availableCameras();
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const MyApp({Key? key}) : super(key: key);
 
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Jarvis Object Detector App',
-     
-      home:MySplashPage(),
+    return GetMaterialApp(
+      title: 'Fruites Detector App GetX',
+      theme: ThemeData(primarySwatch: Colors.blue),
+      home: Home(),
     );
   }
 }
-
-
-
-
