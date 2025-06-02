@@ -131,6 +131,46 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.16.0"
+  native_splash_screen:
+    dependency: "direct main"
+    description:
+      name: native_splash_screen
+      sha256: fa79c6efa1650a3038ea28129e9097019f016bc1e385d95ada42900aa8c62ec4
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.1.0"
+  native_splash_screen_linux:
+    dependency: transitive
+    description:
+      name: native_splash_screen_linux
+      sha256: "0b22aef68df012d3e26d6f5dc22e119578b968d8e5502de6f76758727944a37b"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.1.0"
+  native_splash_screen_macos:
+    dependency: transitive
+    description:
+      name: native_splash_screen_macos
+      sha256: cb49012650eefa71b59da2c937ea251f99e1fd7113884474dfe66bb0a64487d9
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.1.0"
+  native_splash_screen_platform_interface:
+    dependency: transitive
+    description:
+      name: native_splash_screen_platform_interface
+      sha256: "8644f673942ff6247571ce94ede4a63c5d4d9b316805be4296a0a63a4918ad1b"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.1.0"
+  native_splash_screen_windows:
+    dependency: transitive
+    description:
+      name: native_splash_screen_windows
+      sha256: "16d4a65349dca2e63ebea325bb7ee9c2df2f1f54b89edc057591b09dbd8b72b0"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.1.0"
   path:
     dependency: transitive
     description:
@@ -139,6 +179,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.9.1"
+  plugin_platform_interface:
+    dependency: transitive
+    description:
+      name: plugin_platform_interface
+      sha256: "4820fbfdb9478b1ebae27888254d445073732dae3d6ea81f0b7e06d5dedc3f02"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.1.8"
   sky_engine:
     dependency: transitive
     description: flutter
@@ -210,4 +258,4 @@ packages:
     version: "14.3.1"
 sdks:
   dart: ">=3.7.2 <4.0.0"
-  flutter: ">=3.18.0-18.0.pre.54"
+  flutter: ">=3.22.0"

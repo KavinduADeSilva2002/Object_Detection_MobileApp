@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:object_detection_app/MySplashPage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,8 +14,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Jarvis Object Detector App',
      
-      // home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home:MySplashPage(),
     );
   }
 }
+
+
+
 
