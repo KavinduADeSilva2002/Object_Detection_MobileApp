@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:camera/camera.dart';
-import 'package:tflite/tflite.dart';
+import 'package:tflite_v2/tflite_v2.dart';
 import 'main.dart';
 
 class Home extends StatefulWidget {

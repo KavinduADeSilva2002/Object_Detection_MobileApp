@@ -6,6 +6,7 @@ plugins {
 }
 
 android {
+    ndkVersion = "27.0.12077973"
     namespace = "com.example.object_detection_app"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
@@ -37,10 +38,7 @@ android {
             signingConfig = signingConfigs.getByName("debug")
         }
     }
-    apptOptions{
-        noCompress 'tfLite'
-        noCompress 'lite'
-    }
+   
 }
 
 flutter {
