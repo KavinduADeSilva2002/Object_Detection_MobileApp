@@ -104,6 +104,54 @@ Widget build(BuildContext context) {
               fit: BoxFit.fill,
             ),
           ),
+          child: Column(
+            children:[
+              Stack(
+                children:[
+                  Center(
+                    child:Container(
+                      margin: EdgeInsets.only(top:100.0),
+                      height: 220,
+                      width: 320,
+                      child: Image.asset('assets/frame.jpg'),
+                    ),
+                  ),
+                  Center(child: TextButton(
+                    onPressed: () {
+                      initCamera();
+                    },
+                    child: Container(
+                      margin: EdgeInsets.only(top: 65.0),
+                      height: 100,
+                      width: 100,
+                      child: imgCamera==null? Icon(Icons.photo_camera_front, color: Colors.pink, size: 60.0): 
+                      AspectRatio(
+                        aspectRatio: cameraController!.value.aspectRatio,
+                        child: CameraPreview(cameraController!),
+                      )
+                      
+                  )))
+                ],
+              ),
+              Center(
+                child: Container(
+                  margin: EdgeInsets.only(top:55.0),
+                  child: SingleChildScrollView(
+                    child: Text(
+                      result,
+                      style: TextStyle(
+                        backgroundColor: Colors.black87,
+                        fontSize: 25.0,
+                        color: Colors.white,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ),
+
+                ),
+              ),
+            ],
+          ),
         ),
       ],
     ),
